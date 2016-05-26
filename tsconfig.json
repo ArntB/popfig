@@ -1,0 +1,30 @@
+﻿{
+  "compilerOptions": {
+
+    "declaration": true,
+    "target": "es5",
+    "module": "commonjs",
+    "watch": false,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "noImplicitAny": false,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "inlineSourceMap": false,
+    "sourceMap": false,
+    "moduleResolution": "node",
+    "outDir":"."
+    
+  },
+  "files": [
+    "src/popfig.ts",
+    "src/devicestrategy.ts",
+    "src/popfigbrowser.ts",
+    "src/popfigserver.ts"    
+  ],
+  "exclude": [
+    "node_modules",
+    "platforms",
+    "www"
+  ]
+}
