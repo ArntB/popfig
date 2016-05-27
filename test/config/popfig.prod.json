@@ -1,0 +1,37 @@
+{"ENVIRONMENT": "PROD",
+    "services":  [
+        {
+            "id": "DELTA:FIRSTLINE:OFFICE",
+            "name": "FIRSTLINE OFFICE",
+            "URL":"http://deltaoffice:1337",
+            "AUTH": "Bearer eyJhbGciOiJIUzI1NiJ9.NTU4N2JhODY0NDFiYjdlMDE3MGI0MTA0.q2-43aYHratzzFsRr1kzQXyoTc133ofkAxjVUYrh80I",
+            "SERVICE_TYPE":"DELTA"
+        },
+        {
+            "id": "DELTA:FIRSTLINE:KITCHEN",
+            "name": "FIRSTLINE KITCHEN",
+            "URL":"http://deltakitchen:1337",
+            "AUTH": "yolo",
+            "SERVICE_TYPE":"DELTA"
+        },
+        {
+            "id": "FIRSTLINE:SERVICE:TRACKING",
+            "name": "TRACKING",
+            "URL":"http://....",
+            "SERVICE_TYPE":"TRACKING"
+        },
+        {
+            "id": "TRACKING:DB",
+            "name": "DOCUMENTDB",
+            "URL": "",
+            "SERVICE_TYPE": "STORAGE",
+            "config":{
+                "host": "https://steffen.documents.azure.com:443/",
+                "authKey": "MnSrD8TCozhEkwwoHLQ9mXff5u19FHwPgCoxncpZoExzcOHcH0jBQXdZ8bztgdHWoq8l8c9CeZeYWCBN5Epocw==",
+                "setupDatabaseId": {"id": "test"},
+                "databaseId": "test",
+                "setupCollectionId": {"id": "testcollection"},
+                "collectionId": "testcollection"
+            }
+        }
+]}

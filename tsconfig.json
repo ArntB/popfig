@@ -13,14 +13,15 @@
     "inlineSourceMap": false,
     "sourceMap": false,
     "moduleResolution": "node",
-    "outDir":"."
-    
+    "outDir": "."    
   },
   "files": [
+    "index.ts",
     "src/popfig.ts",
     "src/devicestrategy.ts",
     "src/popfigbrowser.ts",
-    "src/popfigserver.ts"    
+    "src/popfigserver.ts",
+    "test/servertest.ts"    
   ],
   "exclude": [
     "node_modules",
