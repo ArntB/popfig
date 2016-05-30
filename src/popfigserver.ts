@@ -1,4 +1,4 @@
-/// <reference path="../typings/main.d.ts" />
+/// <reference path="../typings/index.d.ts" />
 import {DeviceStrategy} from "./devicestrategy"
 import * as fs from "fs"
 import * as os from "os"
