@@ -1,16 +1,18 @@
 {
   "name": "popfig",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "private": false,
-  "author": "Arnt E. Berge aeberge@gmail.com",
+  "author": {"name":"Arnt E. Berge" , "email":"aeberge@gmail.com" },
   "repository": {
+    "type": "git",
     "url": "https://github.com/ArntB/popfig.git"
   },
   "scripts": {
     "setup": "npm install && typings install",
     "preinstall": "",
     "postinstall": "",
-    "prepublish": "tsc"
+    "prepublish": "tsc",
+     "package": "npm pack"
   },
   "license": "ISC",
   "dependencies": {
@@ -50,5 +52,6 @@
     "gulp-gzip": "1.3.0",
     "gulp-rename": "1.2.2",
     "dts-generator": "^1.7.0"
-  }
+  },
+  "main": "index.js"
 }

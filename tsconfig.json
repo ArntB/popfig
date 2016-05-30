@@ -12,16 +12,11 @@
     "preserveConstEnums": true,
     "inlineSourceMap": false,
     "sourceMap": false,
-    "moduleResolution": "node",
-    "outDir": "."    
+    "moduleResolution": "node"
   },
   "files": [
-    "index.ts",
-    "src/popfig.ts",
-    "src/devicestrategy.ts",
-    "src/popfigbrowser.ts",
-    "src/popfigserver.ts",
-    "test/servertest.ts"    
+    "index.ts"
+    
   ],
   "exclude": [
     "node_modules",
