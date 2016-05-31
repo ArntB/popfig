@@ -3,7 +3,7 @@
 
     "declaration": true,
     "target": "es5",
-    "module": "commonjs",
+    "module": "amd",
     "watch": false,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
@@ -15,8 +15,7 @@
     "moduleResolution": "node"
   },
   "files": [
-    "index.ts"
-    
+    "index.ts"    
   ],
   "exclude": [
     "node_modules",
