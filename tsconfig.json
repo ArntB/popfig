@@ -3,7 +3,7 @@
 
     "declaration": true,
     "target": "es5",
-    "module": "amd",
+    "module": "commonjs",
     "watch": false,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
