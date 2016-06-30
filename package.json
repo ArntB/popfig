@@ -1,6 +1,6 @@
 {
   "name": "popfig",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "private": false,
   "author": {"name":"Arnt E. Berge" , "email":"aeberge@gmail.com" },
   "repository": {
@@ -54,5 +54,5 @@
     "dts-generator": "^1.7.0"
   },
   "main": "index.js",
-  "typings": "./typings/index.d.ts"
+  "typings": "./index.d.ts"
 }
