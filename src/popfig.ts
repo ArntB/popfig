@@ -29,18 +29,21 @@ export class Popfig {
     static urlfor(service_type:string): UrlBuilder{
         return new UrlBuilder(service_type, Popfig.getInstance());
     }
-    private deviceStrategy: DeviceStrategy = new PopfigBrowser();
     
     private config: any;
-    constructor(strategy: DeviceStrategy = null){
-        if(strategy) this.deviceStrategy = strategy;
+    constructor(private deviceStrategy: DeviceStrategy = null){
         
-        var configMap = Popfig.configMap[this.deviceStrategy.host()] || Popfig.configMap["default"] || "dev";
-        if(configMap){
-            this.config = this.deviceStrategy.readConfig(configMap.env);
-        }
     }
     
+    load(success: ()=>void, error: (error:any)=>void){
+        var configMap = Popfig.configMap[this.deviceStrategy.host()] || Popfig.configMap["default"] || "dev";
+        if(configMap){
+            this.deviceStrategy.readConfig(configMap.env,(config)=>{
+                this.config = config;
+                success();
+            }, error);
+        }
+    }
     getServiceType(service_type:string): any {
         return this.config.services.filter(x=>x.SERVICE_TYPE === service_type );
     }

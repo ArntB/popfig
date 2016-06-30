@@ -21,3 +21,5 @@ typings/
 tsconfig.json
 typings.json
 npm-debug.log*
+gulpfile.js
+karma.conf

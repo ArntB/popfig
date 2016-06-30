@@ -15,7 +15,8 @@
     "moduleResolution": "node"
   },
   "files": [
-    "index.ts"    
+    "index.ts",
+    "test/servertest.ts"    
   ],
   "exclude": [
     "node_modules",
