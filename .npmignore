@@ -2,12 +2,10 @@ node_modules/
 test/
 tsconfig.json
 typings.json
-typings/
 .settings/
 .vscode
 
 test/
-typings/
 
 *.ts
 !*.d.ts
