@@ -1,9 +1,9 @@
 ﻿{
   "compilerOptions": {
-
+    "outDir": ".",
     "declaration": true,
     "target": "es5",
-    "module": "commonjs",
+    "module": "es6",
     "watch": false,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
@@ -22,5 +22,9 @@
     "node_modules",
     "platforms",
     "www"
-  ]
+  ],
+  "typeRoots": [
+      "node_modules/@types"
+  ],
+  "types": [ "node"]
 }
